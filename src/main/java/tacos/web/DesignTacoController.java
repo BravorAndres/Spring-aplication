@@ -22,7 +22,7 @@ import org.springframework.validation.Errors;
 
 @Slf4j
 @Controller
-@RequestMapping("/desing")
+@RequestMapping("/design")
 @SessionAttributes("tacoOrder")
 public class DesignTacoController {
     
@@ -60,12 +60,9 @@ public class DesignTacoController {
 
     @GetMapping
     public String showDesingForm(){
-        return "desing";
+        return "design";
     }
 
-    private Iterable<Ingredient> filterByType(List<Ingredient>ingredientes,Type type){
-        return ingredientes.stream().filter(x -> x.getType().equals(type)).collect(Collectors.toList());
-    }
 
     @PostMapping
     public String processTaco(
@@ -80,5 +77,9 @@ public class DesignTacoController {
       log.info("Processing taco: {}", taco);
   
       return "redirect:/orders/current";
+    }
+
+    private Iterable<Ingredient> filterByType(List<Ingredient>ingredientes,Type type){
+        return ingredientes.stream().filter(x -> x.getType().equals(type)).collect(Collectors.toList());
     }
 }
