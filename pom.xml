@@ -81,7 +81,7 @@
 		<!-- end::validationStarter[] -->
 	  </dependencies>
 	
-
+	  <!-- tag::excludeLombok[] -->
 	  <build>
 		<plugins>
 		  <plugin>
@@ -98,7 +98,8 @@
 		  </plugin>
 		</plugins>
 	  </build>
-
+	  <!-- end::excludeLombok[] -->
+	
 	  <repositories>
 		<repository>
 		  <id>spring-milestones</id>

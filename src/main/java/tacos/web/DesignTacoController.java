@@ -31,8 +31,8 @@ public void addIngredientsToModel(Model model) {
 	List<Ingredient> ingredients = Arrays.asList(
 	  new Ingredient("FLTO", "Flour Tortilla", Type.WRAP),
 	  new Ingredient("COTO", "Corn Tortilla", Type.WRAP),
-	  new Ingredient("GRBF", "Ground Beef", Type.PROTEN),
-	  new Ingredient("CARN", "Carnitas", Type.PROTEN),
+	  new Ingredient("GRBF", "Ground Beef", Type.PROTEIN),
+	  new Ingredient("CARN", "Carnitas", Type.PROTEIN),
 	  new Ingredient("TMTO", "Diced Tomatoes", Type.VEGGIES),
 	  new Ingredient("LETC", "Lettuce", Type.VEGGIES),
 	  new Ingredient("CHED", "Cheddar", Type.CHEESE),
