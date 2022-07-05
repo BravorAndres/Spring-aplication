@@ -1,5 +1,11 @@
 package tacos;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.domain.Persistable;
+import org.springframework.data.relational.core.mapping.Table;
+
+
+
 import lombok.Data;
 
 @Data
