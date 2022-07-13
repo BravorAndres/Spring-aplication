@@ -1,3 +1,4 @@
+/* 
 package tacos.data;
 
 import java.sql.ResultSet;
@@ -48,3 +49,4 @@ public class JdbcIngredientrepository implements IngredientRepository{
         Ingredient.Type.valueOf(row.getString("type")));
   }
 }
+*/
